@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./image/logo/find-now(1).png">
+    <title>Find Now</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href=".//css/style.css">
+    <script src="bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <div class="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-light" href="#">
+                    <img src="./image/logo/find-now(1).png" alt="" width="30px">Find Now
+                </a>
+            </div>
+            <div class="">
+                <li class="login"><a class="" href="#">Log in</a></li>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav w-50">
+                    <li><a class="" href="./index.html">Home</a></li>
+                    <li><a class="" href="./company-job.html">Companies</a></li>
+                    <li><a class="d-lg-none d-md-none" href="./index.html">Find Job</a></li>
+                    <!-- <li><a class="" href="#">Find Resumes</a></li> -->
+                </div>
+                <div class="navbar-nav navbar-nav-2">
+                    <li><a class="" href="./login.html">Log in</a></li>
+                    <li><a class="" href=".index.html">Find Job</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container job-details">
+        <form action="">
+            <p class="h1 text-center">Post your job in just few minutes!</p>
+            <!-- basic details -->
+            <p class="h5">Basic job details</p>
+            <div class="container card job-post-card ">
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="">
+                        <!-- job-title -->
+                        <label for="job-title"><b>Job Title</b></label>
+                        <input type="text" value="" class="input w-100" placeholder="Enter The Job title">
+                        <!-- location -->
+                        <label for="job-location"><b>Job Location</b></label>
+                        <select name="" id="" class="input p-2 w-100">
+                            <option value="">Select Job Location</option>
+                            <option value="">Chennai</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Delhi</option>
+                            <option value="">Karnataka</option>
+                            <option value="">Kolkata</option>
+                        </select>
+
+                        <!-- openings -->
+                        <label for="No-of-openings"><b>No of Openings</b></label>
+                        <input type="text" value="" class="input w-100" placeholder="Enter No.of Job Openings">
+                    </div>
+                </div>
+            </div>
+            <!-- candidate requirements -->
+            <p class="h5">Candidate Requirement</p>
+            <div class="container card job-post-card">
+                <div class="">
+                    <!-- experience -->
+                    <div>
+                        <label for="job-experience"><b>Total Experience of Candidate</b></label>
+                        <div class="">
+                            <input type="button" value="Any" class="btn  button mt-2" id="Any">
+                            <input type="button" value="Freshers Only" class="btn  button mt-2" id="Freshers">
+                            <input type="button" value="Experienced Only" class="btn  button mt-2" id="Experienced">
+
+                        </div>
+                        <div class="mt-2" id="experience-any">
+                            <p class="bg-secondary p-1 text-light">Both freshers and experienced candidates will be able
+                                to apply.</p>
+                        </div>
+                        <div class="mt-2 " id="experience-freshers">
+                            <p class="bg-secondary p-1 text-light">Only Fresher candidates upto 6 months of experience
+                                will be able to
+                                apply.</p>
+                        </div>
+                        <div class="mt-2" id="experience-experienced">
+                            <div class="d-flex mt-2 w-100">
+                                <div class="">
+                                    <div>
+                                        <label for="">Minimum Experience</label>
+                                    </div>
+                                    <select name="" id="" class="w-100 input p-2" aria-placeholder="select-min">
+                                        <option value="">Select Min</option>
+                                        <option value="">6 Months</option>
+                                        <option value="">1 year</option>
+                                        <option value="">2 years</option>
+                                        <option value="">3 years</option>
+                                        <option value="">4 years</option>
+                                        <option value="">5 years</option>
+                                        <option value="">6 years</option>
+                                        <option value="">7 years</option>
+                                        <option value="">8 years</option>
+                                        <option value="">9 years</option>
+                                        <option value="">10 years</option>
+                                    </select>
+                                </div>
+                                <div class="mt-auto ">
+                                    <div class="ps-1 pe-1">
+                                        <p>to</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div>
+                                        <label for="">Maximum Experience</label>
+                                    </div>
+                                    <select name="" id="" class="w-100 input p-2">
+                                        <option value="">Select Max</option>
+                                        <option value="">6 Months</option>
+                                        <option value="">1 year</option>
+                                        <option value="">2 years</option>
+                                        <option value="">3 years</option>
+                                        <option value="">4 years</option>
+                                        <option value="">5 years</option>
+                                        <option value="">6 years</option>
+                                        <option value="">7 years</option>
+                                        <option value="">8 years</option>
+                                        <option value="">9 years</option>
+                                        <option value="">10 years</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- salary -->
+                    <div class="col-lg-6">
+                        <label for="salary"><b>Salary</b></label>
+                        <div class="salary">
+                            <div>
+                                <input type="text" value="" class="input w-100" placeholder="eg.15000">
+                            </div>
+                            <div class="mt-auto">
+                                <div class="ps-1 pe-1">
+                                    <p>to</p>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" value="" class="input w-100" placeholder="eg.20000">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- job description -->
+                    <div>
+                        <div>
+                            <label for=""><b>Job Description</b></label>
+                        </div>
+                        <div>
+                            <textarea name="" id="" rows="6" class="input w-100 p-1"></textarea>
+                        </div>
+                    </div>
+                    <!-- skils -->
+                    <div>
+                        <div>
+                            <label for="skills"><b>Skills</b></label>
+                        </div>
+                        <input type="text" class="input w-100">
+                    </div>
+                </div>
+            </div>
+            <!-- personal details -->
+            <p class="h5">Personal details</p>
+            <div class="container card job-post-card">
+                <div class="">
+                    <div>
+                        <p><b>Education,Additional Info</b></p>
+                    </div>
+
+                    <div class="">
+                        <div class="">
+                            <div class="button btn mt-2" id="personal-details-age" data-bs-toggle="collapse">
+                                <span>Age
+                                    <span id="plus-age"></span>
+                                    </spna>
+                            </div>
+                            <div class="button btn mt-2" id="personal-details-language" data-bs-toggle="collapse"
+                                onclick="name()">
+                                <span>Language
+                                    <span id="plus-language"></span>
+                                </span>
+                            </div>
+                            <div class="button btn mt-2" id="personal-details-degree" data-bs-toggle="collapse">
+                                <span>Degree
+                                    <span id="plus-degree"></span>
+                                </span>
+                            </div>
+                            <div class="button btn mt-2" id="personal-details-certifications" data-bs-toggle="collapse">
+                                <span>Certifications
+                                    <span id="plus-certifications"></span>
+                                </span>
+                            </div>
+                            <div class="button btn mt-2" id="personal-details-industry" data-bs-toggle="collapse">
+                                <span>Industry
+                                    <span id="plus-industry"></span>
+                                </span>
+                            </div>
+
+                            <!-- age -->
+                            <div class="" id="collapse-age">
+                                <hr>
+                                <div class="dismiss-btn">
+                                    <p><b>Age</b></p>
+                                    <button type="button" class="btn-close btn-close-1"></button>
+                                </div>
+                                <div class="age-details w-50">
+
+                                    <div class=" ">
+                                        <div>
+                                            <label for="">Minimum Age</label>
+                                        </div>
+                                        <div>
+                                            <input type="number" class="input">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <label for="">Maximum Age</label>
+                                        </div>
+                                        <div>
+                                            <input type="number" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- language -->
+                            <div class="" id="collapse-language">
+                                <hr>
+                                <div class="dismiss-btn">
+                                    <p><b>Language</b></p>
+                                    <button type="button" class="btn-close btn-close-2"></button>
+                                </div>
+                                <div class="w-75">
+                                    <div class="mb-2 d-flex justify-content-between">
+                                        <div class="button btn" id="lan_tamil" onclick="lan(lan_tamil,plus_tamil)">
+                                            <span>Tamil</span>
+                                            <span id="plus_tamil" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" id="lan_english"
+                                            onclick="lan(lan_english,plus_english)">
+                                            <span>English </span>
+                                            <span id="plus_english" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="lan_hindi"
+                                            onclick="lan(lan_hindi,plus_hindi)">
+                                            <span>Hindi</span>
+                                            <span id="plus_hindi" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="lan_kannada"
+                                            onclick="lan(lan_kannada,plus_kannada)">
+                                            <span>Kannada </span>
+                                            <span id="plus_kannada" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="lan_telugu"
+                                            onclick="lan(lan_telugu,plus_telugu)">
+                                            <span>Telugu</span>
+                                            <span id="plus_telugu" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="lan_bengali"
+                                            onclick="lan(lan_bengali,plus_bengali)">
+                                            <span>Bengali</span>
+                                            <span id="plus_bengali" class="fa-solid fa-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2 d-flex justify-content-between">
+                                        <div class="button btn" href="" id="lan_marathi"
+                                            onclick="lan(lan_marathi,plus_marathi)">
+                                            <span>Marathi</span>
+                                            <span id="plus_marathi" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="lan_punjabi"
+                                            onclick="lan(lan_punjabi,plus_punjabi)">
+                                            <span>Punjabi </span>
+                                            <span id="plus_punjabi" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="lan_malayalam"
+                                            onclick="lan(lan_malayalam,plus_malayalam)">
+                                            <span>Malayalam </span>
+                                            <span id="plus_malayalam" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="lan_gujarati"
+                                            onclick="lan(lan_gujarati,plus_gujarati)">
+                                            <span>Gujarati </span>
+                                            <span id="plus_gujarati" class="fa-solid fa-plus"></span>
+
+                                        </div>
+                                        <div class="button btn" href="" id="lan_urdu" onclick="lan(lan_urdu,plus_urdu)">
+                                            <span>Urdu </span>
+                                            <span id="plus_urdu" class="fa-solid fa-plus"></span>
+                                        </div>
+                                        <div class="button btn" href="" id="la_odia" onclick="lan(la_odia,plus_odia)">
+                                            <span>Odia </span>
+                                            <span id="plus_odia" class="fa-solid fa-plus"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- degree -->
+                            <div class="" id="collapse-degree">
+                                <hr>
+                                <div class="dismiss-btn">
+                                    <p><b>Degree</b></p>
+                                    <button type="button" class="btn-close btn-close-3"></button>
+                                </div>
+                                <div class="">
+                                    <!-- <label for="degree">Degree and Specialisation</label> -->
+                                    <div class="input w-50 d-flex p-1">
+                                        <input type="search" name="" id="search_degree" class="w-100">
+
+                                    </div>
+                                    <div class="availabeldeg" id="availabeldeg">
+                                        <div class="d-flex align-items-center justify-content-between w-100">
+                                            <h5>Select</h5>
+                                            <span class="fa-solid fa-close" onclick="closedeg(availabeldeg)"></span>
+                                        </div>
+                                        <div class="list-of-degree" id="list_of_degree">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- certification -->
+                        <div class="" id="collapse-certifications">
+                            <hr>
+                            <div class="dismiss-btn">
+                                <p><b>Certifications</b></p>
+                                <button type="button" class="btn-close btn-close-4"></button>
+                            </div>
+                            <div class="input w-50 d-flex p-1">
+                                <input type="search" name="" id="search_certi" class="w-100">
+
+                            </div>
+                            <div class="availabelcerti" id="availabelcerti">
+                                <div class="d-flex align-items-center justify-content-between w-100">
+                                    <h5>Select</h5>
+                                    <span class="fa-solid fa-close" onclick="closedeg(availabelcerti)"></span>
+                                </div>
+                                <div class="list-of-certi" id="list_of_certi">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- industry -->
+                        <div class="" id="collapse-industry">
+                            <hr>
+                            <div class="dismiss-btn">
+                                <p><b>Preferred Industry</b></p>
+                                <button type="button" class="btn-close btn-close-5"></button>
+                            </div>
+                            <div>
+                                <select name="" id="" class="input p-2 w-25">
+                                    <option value="">Any Industry</option>
+                                    <option value="">Education</option>
+                                    <option value="">Retail</option>
+                                    <option value="">Finance</option>
+                                    <option value="">Health Care</option>
+                                    <option value="">BPO / Call Centre</option>
+                                    <option value="">Banking</option>
+                                    <option value="">Advertising and Marketing</option>
+                                    <option value="">Hardware & Networking</option>
+                                    <option value="">Software & IT Services</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- timing -->
+    <div class="container">
+        <p class="h5">Timings</p>
+        <div class="card job-post-card">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <p><b>Interviwes Timing</b></p>
+                    <textarea name="" id="" rows="2" class="input w-100 p-1"></textarea>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <p><b>Job Timing</b></p>
+                    <textarea name="" id="" rows="2" class="input w-100 p-1"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about your company -->
+    <div class="container">
+        <p class="h5">About Your Company</p>
+        <div class="card job-post-card">
+            <div class="row">
+                <!-- company name -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label for=""><b>Company Name</b></label>
+                    <div>
+                        <input type="text" value="" class="input w-100">
+                    </div>
+                </div>
+                <!-- contact person name -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label for=""><b>Contact Person Name</b></label>
+                    <div>
+                        <input type="text" value="" class="input w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- number -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label for=""><b>Phone Number</b></label>
+                    <div>
+                        <input type="" value="" class="input w-100">
+                    </div>
+                </div>
+                <!-- mail id -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label for=""><b>Email Id</b></label>
+                    <div>
+                        <input type="email" value="" class="input w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- contact person profile -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label for=""><b>Contact Person Profile</b></label>
+                    <div>
+                        <select name="" id="" class="input p-2 w-100">
+                            <option value=""></option>
+                            <option value="">HR</option>
+                            <option value="">Owner</option>
+                            <option value="">Manager</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <!-- size of organization -->
+                    <label for=""><b>Size of Organization</b></label>
+                    <div>
+                        <select name="" id="" class="input p-2 w-100">
+                            <option value=""></option>
+                            <option value="">1-10</option>
+                            <option value="">11-50</option>
+                            <option value="">51-100</option>
+                            <option value="">More than 100</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- address -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label for=""><b>Job Address</b></label>
+                    <div>
+                        <textarea name="" id="" rows="3" class="input w-100 p-1"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 mb-4">
+        <div>
+            <button class="btn bg-info">Submit</button>
+        </div>
+    </div>
+    </form>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid container-fluid-6 bg-dark">
+        <div class="row pt-3">
+            <div class="footer">
+                <div class="">
+                    <a href="">
+                        <div class="d-lg-flex navbar-brand">
+                            <img src="./image/logo/find-now(1).png" alt="" width="50px">
+                            <p class="text-light h5 mt-lg-2">Find Now</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="brand">
+                    <div class="">
+                        <p class="text-light">Follow us on social media</p>
+                    </div>
+                    <div class="">
+                        <div class="brand-2">
+                            <div>
+                                <a href=""><span class="fa-brands fa-facebook text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-instagram text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-twitter text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-youtube text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-linkedin text-light"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <hr class="text-light">
+            </div>
+            <div class="footer">
+                <p class="text-light">&#169;2024 Find Now. All rights are reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
