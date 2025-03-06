@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./image/logo/find-now(1).png">
+    <title>Find Now</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <div class="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-light" href="#">
+                    <img src="./image/logo/find-now(1).png" alt="" width="30px">Find Now
+                </a>
+            </div>
+            <div class="">
+                <li class="login"><a class="" href="#">Log in</a></li>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav w-75">
+                    <li><a class="" href="./index.html">Home</a></li>
+                    <li><a class="" href="./index.html">Jobs</a></li>
+                    <li><a class="" href="./company-job.html">Companies</a></li>
+                    <li><a class="d-lg-none d-md-none" href="./post-job.html">Post jobs</a></li>
+                </div>
+                <div class="navbar-nav navbar-nav-2">
+                    <li><a class="" href="./login.html">Log in</a></li>
+                    <li><a class="" href="./employer.html">Post jobs</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- container-1  -->
+    <div class="container-fluid container-fluid-1">
+        <div class="row p-2">
+            <div class="col-lg-8 col-md-6 col-12 your-job">
+                <div class="row ">
+                    <h1>Find Your Job in Few seconds</h1>
+                </div>
+                <div class="row bg-secondary rounded input-area w-100 col-sm-12 m-auto">
+                    <div class="col-lg-3 col-md-12 col-12 gap-1">
+                        <input class="w-100 rounded m-auto mb-1" type="text" id="input_box" autocomplete="off"
+                            placeholder="Search your job" href="#input" data-bs-toggle="collapse">
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                        <select class="rounded  input w-100 m-auto mb-1" type="text" aria-placeholder="Experience"
+                            id="index_experience">
+                            <option value="">Experience</option>
+                            <option value="">Any-experience</option>
+                            <option value="">6 Months</option>
+                            <option value="">1 year</option>
+                            <option value="">2 years</option>
+                            <option value="">3 years</option>
+                            <option value="">4 years</option>
+                            <option value="">5 years</option>
+                            <option value="">6 years</option>
+                            <option value="">7 years</option>
+                            <option value="">8 years</option>
+                            <option value="">9 years</option>
+                            <option value="">10 years</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                        <input class="rounded w-100 m-auto mb-1" type="text" id="input_box_1" autocomplete="off"
+                            placeholder="Location">
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                        <button class="btn btn-info w-100 m-auto" data-bs-toggle="offcanvas"
+                            data-bs-target="#searchoffcanva"
+                            onclick="funfun(input_box,index_experience,input_box_1)">Search Job</button>
+                    </div>
+                    <div class="offcanvas offcanvas-start w-100 hide" id="searchoffcanva">
+                        <div>
+                            <button class="btn btn-close " data-bs-dismiss="offcanvas" onclick="oone(onetwo)"></button>
+
+                        </div>
+                        <div id="onetwo">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="result " id="result">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6 col-12"></div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="result " id="result_1">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6 col-12"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="./image/image-1.png" alt="" width="100%" height="500px">
+            </div>
+        </div>
+    </div>
+    <!-- container-2 -->
+    <div class="container-fluid container-fluid-2 pt-2">
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center mb-4">
+                <p class="w-75  h2 text-center">Popular Searches on Internet</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <a href="./parttime-job.html">
+                    <div class="card card-1 p-1">
+                        <div class="row">
+                            <p class="h2">Part Time job</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-lg-4 col-md-6 d-flex align-items-end">
+                                <a href="./parttime-job.html" class="btn-1 rounded w-100" href="">View All <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col-6 col-lg-8 col-md-6">
+                                <img src="./image/image3.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <a href="./freshers-job.html">
+                    <div class="card card-2 p-1">
+                        <div class="row">
+                            <p class="h2">Freshers job</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-lg-4 col-md-6 d-flex align-items-end">
+                                <a href="./freshers-job.html" class="btn-2 rounded w-100" href="">View All <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col-6 col-lg-8 col-md-6">
+                                <img src="./image/image2.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <a href="">
+                    <div class="card card-3 p-1">
+                        <div class="row">
+                            <p class="h2">Work from Home</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-lg-4 col-md-6 d-flex align-items-end">
+                                <a class="btn-3 rounded w-100" href="">View All <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col-6 col-lg-8 col-md-6">
+                                <img src="./image/image4.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <a href="./bank&finance.html">
+                    <div class="card card-4 p-1">
+                        <div class="row">
+                            <p class="h2">Banking & Finance</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-lg-4 col-md-6 d-flex align-items-end">
+                                <a href="./bank&finance.html" class="btn-4 rounded w-100" href="">View All <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col-6 col-lg-8 col-md-6">
+                                <img src="./image/image5.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <a href="./software&it.html">
+                    <div class="card card-5 p-1 h-100">
+                        <div class="row">
+                            <p class="h2">Software & IT</p>
+                        </div>
+                        <div class="row h-100">
+                            <div class="col-6 col-lg-4 col-md-6 d-flex align-items-end">
+                                <a href="./software&it.html" class="btn-5 rounded w-100" href="">View All <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col-6 col-lg-8 col-md-6">
+                                <img src="./image/image6.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- container-3 -->
+    <div class="container-fluid container-fluid-3">
+        <div class="row mt-5">
+            <p class="h2 text-center">Openings in Top Companies</p>
+        </div>
+        <div class="row mt-4">
+            <div class="d-flex top-companies">
+                <div class="top-companies-1 d-flex">
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/tcs.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">TCS</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./tcs.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/wipro.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Wipro</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./wipro.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="   ">
+                                <img src="./image/logo/hdfc.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">HDFC Bank</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./hdfc-job.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/zomato.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Zomato</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./zomato.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/tech mahindra.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Tech Mahindra</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./tech-mahindra.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6  p-1">
+                            <div class="">
+                                <img src="./image/logo/accenture.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Accenture</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./accenture.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/swiggy.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Swiggy</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="swiggy-job.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/karur vysya (2).png" alt="" height="159px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Karur Vysya</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./karur vysya.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/zoho.jfif" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Zoho</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./zoho.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/teleperformance.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Tele Performace</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./teleperformance.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/l&t.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">L&T</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./l&t.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6  p-1">
+                            <div class="">
+                                <img src="./image/logo/sutherland.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Sutherland</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./sutherland.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/hcl.png" alt="" width="200px" height="159px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">HCL</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./hcl.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/zepto.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Zepto</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./zepto.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-companies-2 d-flex">
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/tcs.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">TCS</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./tcs.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/wipro.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Wipro</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./wipro.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="   ">
+                                <img src="./image/logo/hdfc.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">HDFC Bank</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./hdfc-job.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/zomato.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Zomato</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./zomato.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/tech mahindra.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Tech Mahindra</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="./tech-mahindra.html">Viwe jobs <span
+                                        class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6  p-1">
+                            <div class="">
+                                <img src="./image/logo/accenture.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Accenture</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="">Viwe jobs <span class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="me-2">
+                        <div class="card card-6 p-1">
+                            <div class="">
+                                <img src="./image/logo/swiggy.png" alt="" width="200px">
+                            </div>
+                            <div class="row">
+                                <p class="text-center h5">Swiggy</p>
+                            </div>
+                            <div>
+                                <a class="btn" href="">Viwe jobs <span class="fa-solid fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  mt-5 mb-5">
+            <div class="col-12 d-flex justify-content-center">
+                <a href="./company-job.html" class="btn viwe-jobs">Viwe All Jobs <span
+                        class="fa-solid fa-arrow-right"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- container-4 -->
+
+    <div class="container-fluid container-fluid-4 d-none d-lg-block d-md-block">
+        <div class="row text-center">
+            <p class="h2 mt-4 mb-3">Discover jobs across popular roles</p>
+        </div>
+        <div class="row job-roles">
+            <div class="col-lg-5 col-md-4">
+                <img src="./image/image7.png" alt="" width="500px" height="100%">
+            </div>
+            <div class="col-lg-6 col-md-8 container container-1 mt-5 mb-5">
+
+                <div class="">
+                    <div id="carousel" class="carousel slide">
+                        <div class="carousel-inner p-3">
+                            <div class="carousel-item active">
+                                <div class="">
+                                    <div class="row mb-1">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('FullStack')">
+                                                <p class="h5">FullStack Developer</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="offcanvas offcanvas-start w-100 " id="innnn">
+                                            <div>
+                                                <button class="btn btn-close" data-bs-dismiss="offcanvas"
+                                                    onclick="katham(go)"></button>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="d-none d-lg-block col-lg-4 d-md-block col-md-4">
+                                                        <div class="filter m-4">
+                                                            <div class="p-2">
+                                                                <div class=" d-flex justify-content-between"
+                                                                    id="date-posted">
+                                                                    <b>Date Posted</b>
+                                                                    <span class="fa-solid fa-angle-up "
+                                                                        id="filter-date"></span>
+                                                                </div>
+                                                                <div class="" id="date-posted-1">
+                                                                    <hr>
+                                                                    <input type="checkbox" name="" id="last-24-hours">
+                                                                    <label for="last-24-hours">Last 24
+                                                                        Hours</label><br>
+                                                                    <input type="checkbox" name="" id="last-3-days">
+                                                                    <label for="last-3-days">Last 3
+                                                                        Days</label><br>
+                                                                    <input type="checkbox" name="" id="last-7-days">
+                                                                    <label for="last-7-days">Last 7
+                                                                        Days</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter m-4">
+                                                            <div class="p-2">
+                                                                <div class=" d-flex justify-content-between "
+                                                                    id="location">
+                                                                    <b>Location</b>
+                                                                    <span class="fa-solid fa-angle-up "
+                                                                        id="filter-location"></span>
+                                                                </div>
+                                                                <div class="" id="location-1">
+                                                                    <hr>
+                                                                    <input type="checkbox" name="" id="channai"> <label
+                                                                        for="channai">TamilNadu</label><br>
+                                                                    <input type="checkbox" name="" id="mumbai"> <label
+                                                                        for="mumbai">Mumbai</label><br>
+                                                                    <input type="checkbox" name="" id="delhi"> <label
+                                                                        for="delhi">Delhi</label><br>
+                                                                    <input type="checkbox" name="" id="kolkata"> <label
+                                                                        for="kolkata">Kolkata</label><br>
+                                                                    <input type="checkbox" name="" id="hyderabad">
+                                                                    <label for="hyderabad">Hyderabad</label><br>
+                                                                    <input type="checkbox" name="" id="karnataka">
+                                                                    <label for="karnataka">Karnataka</label><br>
+                                                                    <input type="checkbox" name="" id="gujarat"> <label
+                                                                        for="gujarat">Gujarat</label><br>
+                                                                    <div class="d-flex justify-content-center"
+                                                                        onclick="more(view_1)">
+                                                                        <span class="filter-more"><button
+                                                                                class="filter-more"><b>View
+                                                                                    More</b></button></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter filter-location m-4" id="view_1">
+                                                            <div class="p-2">
+                                                                <div class=" d-flex justify-content-between "
+                                                                    id="location">
+                                                                    <b>Location</b>
+                                                                    <span class="fa-solid fa-close "
+                                                                        id="filter-location"
+                                                                        onclick="more_close(view_1)"></span>
+                                                                </div>
+                                                                <div class="" id="location-1">
+                                                                    <hr>
+                                                                    <div class="d-flex justify-content-around">
+                                                                        <div>
+                                                                            <input type="checkbox" name="" id="channai">
+                                                                            <label for="channai">Chennai</label><br>
+                                                                            <input type="checkbox" name="" id="mumbai">
+                                                                            <label for="mumbai">Mumbai</label><br>
+                                                                            <input type="checkbox" name="" id="delhi">
+                                                                            <label for="delhi">Delhi</label><br>
+                                                                            <input type="checkbox" name="" id="kolkata">
+                                                                            <label for="kolkata">Kolkata</label><br>
+                                                                            <input type="checkbox" name=""
+                                                                                id="hyderabad"> <label
+                                                                                for="hyderabad">Hyderabad</label><br>
+                                                                            <input type="checkbox" name=""
+                                                                                id="karnataka"> <label
+                                                                                for="karnataka">Bengaluru</label><br>
+                                                                            <input type="checkbox" name="" id="gujarat">
+                                                                            <label for="gujarat">Gujarat</label><br>
+                                                                        </div>
+                                                                        <div>
+                                                                            <input type="checkbox" name="" id="channai">
+                                                                            <label for="channai">Pune</label><br>
+                                                                            <input type="checkbox" name="" id="mumbai">
+                                                                            <label for="mumbai">Gurugram</label><br>
+                                                                            <input type="checkbox" name="" id="delhi">
+                                                                            <label for="delhi">Noida</label><br>
+                                                                            <input type="checkbox" name="" id="kolkata">
+                                                                            <label for="kolkata">Coimbatore</label><br>
+                                                                            <input type="checkbox" name=""
+                                                                                id="hyderabad"> <label
+                                                                                for="hyderabad">Ahmedabad</label><br>
+                                                                            <input type="checkbox" name=""
+                                                                                id="karnataka"> <label
+                                                                                for="karnataka">Jaipur</label><br>
+                                                                            <input type="checkbox" name="" id="gujarat">
+                                                                            <label
+                                                                                for="gujarat">Thiruvananthapuram</label><br>
+                                                                        </div>
+                                                                        <div>
+                                                                            <input type="checkbox" name="" id="channai">
+                                                                            <label for="channai">Indore</label><br>
+                                                                            <input type="checkbox" name="" id="mumbai">
+                                                                            <label for="mumbai">Nagpur</label><br>
+                                                                            <input type="checkbox" name="" id="delhi">
+                                                                            <label for="delhi">Madurai</label><br>
+                                                                            <!-- <input type="checkbox" name="" id="kolkata"> <label for="kolkata"></label><br> -->
+                                                                            <!-- <input type="checkbox" name="" id="hyderabad"> <label for="hyderabad"></label><br>
+                                                                            <input type="checkbox" name="" id="karnataka"> <label for="karnataka"></label><br>
+                                                                            <input type="checkbox" name="" id="gujarat"> <label for="gujarat"></label><br> -->
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-end">
+                                                                        <input type="button" value="Apply"
+                                                                            class="apply">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter m-4">
+                                                            <div class="p-2">
+                                                                <div class="d-flex justify-content-between"
+                                                                    id="work-mode">
+                                                                    <b>Salary</b>
+                                                                    <span class="fa-solid fa-angle-up filter-show"
+                                                                        id="filter-workmode"></span>
+                                                                </div>
+                                                                <div class="" id="work-mode-1">
+                                                                    <hr>
+                                                                    <input type="checkbox" name="" id="0-5"> <label
+                                                                        for="0-5">0-5 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="5-10"> <label
+                                                                        for="5-10">5-10 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="10-15"> <label
+                                                                        for="10-15">10-15 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="15-20"> <label
+                                                                        for="15-20">15-20 lakhs</label><br>
+
+                                                                    <div class="d-flex justify-content-center"
+                                                                        onclick="more(view_2)">
+                                                                        <span class="filter-more"><button
+                                                                                class="filter-more"><b>View
+                                                                                    More</b></button></span>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter filter-sal p-3" id="view_2">
+                                                            <div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <b>Salary</b>
+                                                                    <span class="fa-solid fa-close" id="close-filter"
+                                                                        onclick="more_close(view_2)"></span>
+                                                                </div>
+                                                                <div>
+                                                                    <hr>
+                                                                    <input type="checkbox" name="" id="0-5-l"> <label
+                                                                        for="0-5-l">0-5 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="5-10-l"> <label
+                                                                        for="5-10-l">5-10 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="10-15-l"> <label
+                                                                        for="10-15-l">10-15 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="15-20-l"> <label
+                                                                        for="15-20-l">15-20 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="20-25-l"> <label
+                                                                        for="20-25-l">20-25 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="25-50-l"> <label
+                                                                        for="25-50-l">25-50 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="50-75-l"> <label
+                                                                        for="50-75-l">50-75 lakhs</label><br>
+                                                                    <input type="checkbox" name="" id="75-100-l"> <label
+                                                                        for="75-100-l">75-100 lakhs</label><br>
+                                                                    <div class="d-flex justify-content-end">
+                                                                        <input type="button" value="Apply"
+                                                                            class="apply">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter m-4">
+                                                            <div class="p-2">
+                                                                <div class="d-flex justify-content-between"
+                                                                    id="work-type">
+                                                                    <b>Work Type</b>
+                                                                    <span class="fa-solid fa-angle-up filter-show"
+                                                                        id="filter-worktype"></span>
+                                                                </div>
+                                                                <div class="" id="work-type-1">
+                                                                    <hr>
+                                                                    <input type="checkbox" name="" id="f-time"> <label
+                                                                        for="f-time">Full time</label><br>
+                                                                    <input type="checkbox" name="" id="p-time"> <label
+                                                                        for="p-time">Part time</label><br>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter m-4">
+                                                            <div class="p-2">
+                                                                <div class="d-flex justify-content-between"
+                                                                    id="work-mode">
+                                                                    <b>Work Mode</b>
+                                                                    <span class="fa-solid fa-angle-up filter-show"
+                                                                        id="filter-workmode"></span>
+                                                                </div>
+                                                                <div class="" id="work-mode-1">
+                                                                    <hr>
+                                                                    <input type="checkbox" name="" id="wfh"> <label
+                                                                        for="wfh">Work from home</label><br>
+                                                                    <input type="checkbox" name="" id="wfo"> <label
+                                                                        for="wfo">Work from office</label><br>
+                                                                    <input type="checkbox" name="" id="wff"> <label
+                                                                        for="wff">Work from field</label><br>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-lg-none d-md-none">
+                                                        <div class="p-3 d-flex align-items-center ">
+                                                            <div class="p-1">
+                                                                <span class="fa-solid fa-filter"></span>
+                                                            </div>
+                                                            <div class="d-flex filter-mobile">
+                                                                <span><button class="filter-btn-mobile"
+                                                                        data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#offcanvasBottom"
+                                                                        aria-controls="offcanvasBottom">Date Posted
+                                                                        <span
+                                                                            class="fa-solid fa-angle-down"></span></button>
+                                                                </span>
+                                                                <span><button class="filter-btn-mobile"
+                                                                        data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#offcanvasBottom"
+                                                                        aria-controls="offcanvasBottom">Location <span
+                                                                            class="fa-solid fa-angle-down"></span></button>
+                                                                </span>
+                                                                <span><button class="filter-btn-mobile"
+                                                                        data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#offcanvasBottom"
+                                                                        aria-controls="offcanvasBottom">Salary <span
+                                                                            class="fa-solid fa-angle-down"></span></button>
+                                                                </span>
+                                                                <span><button class="filter-btn-mobile"
+                                                                        data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#offcanvasBottom"
+                                                                        aria-controls="offcanvasBottom">Work Type <span
+                                                                            class="fa-solid fa-angle-down"></span></button>
+                                                                </span>
+                                                                <span><button class="filter-btn-mobile"
+                                                                        data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#offcanvasBottom"
+                                                                        aria-controls="offcanvasBottom">Work Mode <span
+                                                                            class="fa-solid fa-angle-down"></span></button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="offcanvas offcanvas-bottom rounded h-100" tabindex="-1"
+                                                        id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                                        <div class="offcanvas-header">
+                                                            <h5 class="offcanvas-title" id="offcanvasBottomLabel">All
+                                                                Filters</h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                                        </div>
+
+                                                        <div class="">
+                                                            <div class="row">
+                                                                <hr>
+                                                                <div class="col-4 p-1">
+                                                                    <div class="d-flex-col">
+                                                                        <button class="filter-sm text-start  w-100"
+                                                                            id="data_posted_sm"> Date Posted</button>
+                                                                        <button class="filter-sm text-start  w-100"
+                                                                            id="location_sm"> Location</button>
+                                                                        <button class="filter-sm text-start  w-100"
+                                                                            id="salary_sm"> Salary</button>
+                                                                        <button class="filter-sm text-start  w-100"
+                                                                            id="work_type_sm"> Work Type</button>
+                                                                        <button class="filter-sm text-start  w-100"
+                                                                            id="work_mode_sm"> Work Mode</button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-8 mb-2 filter-display-sm">
+                                                                    <div class=" " id="date_posted_filter">
+
+                                                                        <input type="checkbox" name=""
+                                                                            id="last-24-hours"> <label
+                                                                            for="last-24-hours">Last 24
+                                                                            Hours</label><br>
+                                                                        <input type="checkbox" name="" id="last-3-days">
+                                                                        <label for="last-3-days">Last 3
+                                                                            Days</label><br>
+                                                                        <input type="checkbox" name="" id="last-7-days">
+                                                                        <label for="last-7-days">Last 7
+                                                                            Days</label>
+                                                                    </div>
+                                                                    <div class="" id="location_filter">
+                                                                        <input type="checkbox" name="" id="channai">
+                                                                        <label for="channai">Chennai</label><br>
+                                                                        <input type="checkbox" name="" id="mumbai">
+                                                                        <label for="mumbai">Mumbai</label><br>
+                                                                        <input type="checkbox" name="" id="delhi">
+                                                                        <label for="delhi">Delhi</label><br>
+                                                                        <input type="checkbox" name="" id="kolkata">
+                                                                        <label for="kolkata">Kolkata</label><br>
+                                                                        <input type="checkbox" name="" id="hyderabad">
+                                                                        <label for="hyderabad">Hyderabad</label><br>
+                                                                        <input type="checkbox" name="" id="karnataka">
+                                                                        <label for="karnataka">Bengaluru</label><br>
+                                                                        <input type="checkbox" name="" id="gujarat">
+                                                                        <label for="gujarat">Gujarat</label><br>
+                                                                        <input type="checkbox" name="" id="channai">
+                                                                        <label for="channai">Pune</label><br>
+                                                                        <input type="checkbox" name="" id="mumbai">
+                                                                        <label for="mumbai">Gurugram</label><br>
+                                                                        <input type="checkbox" name="" id="delhi">
+                                                                        <label for="delhi">Noida</label><br>
+                                                                        <input type="checkbox" name="" id="kolkata">
+                                                                        <label for="kolkata">Coimbatore</label><br>
+                                                                        <input type="checkbox" name="" id="hyderabad">
+                                                                        <label for="hyderabad">Ahmedabad</label><br>
+                                                                        <input type="checkbox" name="" id="karnataka">
+                                                                        <label for="karnataka">Jaipur</label><br>
+                                                                        <input type="checkbox" name="" id="gujarat">
+                                                                        <label
+                                                                            for="gujarat">Thiruvananthapuram</label><br>
+                                                                    </div>
+                                                                    <div class="" id="salary_filter">
+                                                                        <input type="checkbox" name="" id="0-5-l">
+                                                                        <label for="0-5-l">0-5 lakhs</label><br>
+                                                                        <input type="checkbox" name="" id="5-10-l">
+                                                                        <label for="5-10-l">5-10 lakhs</label><br>
+                                                                        <input type="checkbox" name="" id="10-15-l">
+                                                                        <label for="10-15-l">10-15 lakhs</label><br>
+                                                                        <input type="checkbox" name="" id="15-20-l">
+                                                                        <label for="15-20-l">15-20 lakhs</label><br>
+                                                                        <input type="checkbox" name="" id="20-25-l">
+                                                                        <label for="20-25-l">20-25 lakhs</label><br>
+                                                                        <input type="checkbox" name="" id="25-50-l">
+                                                                        <label for="25-50-l">25-50 lakhs</label><br>
+                                                                        <input type="checkbox" name="" id="50-75-l">
+                                                                        <label for="50-75-l">50-75 lakhs</label><br>
+                                                                        <input type="checkbox" name="" id="75-100-l">
+                                                                        <label for="75-100-l">75-100 lakhs</label><br>
+                                                                    </div>
+                                                                    <div class="" id="work_type_filter">
+                                                                        <input type="checkbox" name="" id="f-time">
+                                                                        <label for="f-time">Full time</label><br>
+                                                                        <input type="checkbox" name="" id="p-time">
+                                                                        <label for="p-time">Part time</label><br>
+                                                                    </div>
+                                                                    <div class="" id="work_mode_filter">
+                                                                        <input type="checkbox" name="" id="wfh"> <label
+                                                                            for="wfh">Work from home</label><br>
+                                                                        <input type="checkbox" name="" id="wfo"> <label
+                                                                            for="wfo">Work from office</label><br>
+                                                                        <input type="checkbox" name="" id="wff"> <label
+                                                                            for="wff">Work from field</label><br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row w-100">
+                                                                <div class="d-flex justify-content-between ">
+                                                                    <div>
+                                                                        <button class="btn btn-info">Clear</button>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button class="btn btn-info">Apply</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8 col-12 mt-4 p-0 m-0">
+                                                        <div id="go" class="go">
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('FrontEnd')">
+                                                <p class="h5">FrontEnd Developer</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-2 col-md-1 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('DevOps',go)">
+                                                <p class="h5">DevOps Engineer</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Moblie/App',go)">
+                                                <p class="h5">Moblie/App Developer</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Technical',go)">
+                                                <p class="h5">Technical Lead</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a hhref="#innnn" data-bs-toggle="offcanvas" onclick="just('UI/UX',go)">
+                                                <p class="h5">UI/UX Designer</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row mb-1">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#imm" data-bs-toggle="offcanvas" onclick="just('Test',gogo)">
+                                                <p class="h5">Automation Test Engineer</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="offcanvas offcanvas-start w-100 " id="imm">
+                                            <div>
+                                                <button class="btn btn-close " data-bs-dismiss="offcanvas"
+                                                    onclick="katham(gogo)"></button>
+                                                <div id="gogo">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-5  roles">
+                                            <a href="#imm" data-bs-toggle="offcanvas" onclick="just('Data',gogo)">
+                                                <p class="h5">Data Analyst</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#imm" data-bs-toggle="offcanvas" onclick="just('Cyber',gogo)">
+                                                <p class="h5">Cyber Security</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a href="#imm" data-bs-toggle="offcanvas" onclick="just('Branch',gogo)">
+                                                <p class="h5">Branch Manager</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#imm" data-bs-toggle="offcanvas" onclick="just('Product',gogo)">
+                                                <p class="h5">Product Manager</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a href="#imm" data-bs-toggle="offcanvas" onclick="just('Human',gogo)">
+                                                <p class="h5">Human Resource</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row mb-1">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Sales',go)">
+                                                <p class="h5">Sales Executive</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Digital',go)">
+                                                <p class="h5">Digital Marketing</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Data',go)">
+                                                <p class="h5">Data Base Developer</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Mechanical',go)">
+                                                <p class="h5">Mechanical Engineering</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 me-1 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Business',go)">
+                                                <p class="h5">Business Analyst</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-5 roles">
+                                            <a href="#innnn" data-bs-toggle="offcanvas" onclick="just('Software',go)">
+                                                <p class="h5">Software Architect</p>
+                                                <p>200+ Job Openings</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-secondary rounded-pill "></span>
+
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-secondary rounded-pill"></span>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+
+            </div>
+        </div>
+        <div class="row  mt-3">
+            <div class="col-12 d-flex justify-content-center mb-3">
+                <a href="#" class="btn viwe-jobs">Viwe All Categories <span class="fa-solid fa-arrow-right"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- container-5 only for sm -->
+    <div class="container-fluid container-fluid-5 d-lg-none d-md-none">
+        <div class="row text-center">
+            <p class="h2 mt-4 mb-3">Discover jobs across popular roles</p>
+        </div>
+        <div class="row">
+            <div class="jobs-category">
+                <div class="categories">
+                    <div class="category" data-bs-toggle="offcanvas" data-bs-target="#1234">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img1.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">FullStack Developer</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offcanvas offcanvas-start w-100 " id="#1234">
+                        <div>
+                            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+                            <div id="go">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img8.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">FrontEnd Developer</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img2.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">DevOps Engineer</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img1.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">UI/UX Designer</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img1.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Moblie/App Developer</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img7.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Technical Lead</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="jobs-category mt-3">
+                <div class="categories">
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img1.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Automation Test Engineer</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img7.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Data Analyst</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img3.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Cyber Security</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img4.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Branch Manager</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img5.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Product Manager</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img src="./image/job-roles img/img2.svg" alt="">
+                                </div>
+                                <div class="">
+                                    <a href="" class="h5">Human Resource</a>
+                                    <p>200+ openings</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  mt-3">
+            <div class="col-12 d-flex justify-content-center mb-3">
+                <a href="#" class="btn viwe-jobs">Viwe All Categories <span class="fa-solid fa-arrow-right"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid container-fluid-6 bg-dark">
+        <div class="row pt-3">
+            <div class="footer">
+                <div class="">
+                    <a href="">
+                        <div class="d-lg-flex navbar-brand">
+                            <img src="./image/logo/find-now(1).png" alt="" width="50px">
+                            <p class="text-light h5 mt-lg-2">Find Now</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="brand">
+                    <div class="">
+                        <p class="text-light">Follow us on social media</p>
+                    </div>
+                    <div class="">
+                        <div class="brand-2">
+                            <div>
+                                <a href=""><span class="fa-brands fa-facebook text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-instagram text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-twitter text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-youtube text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-linkedin text-light"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <hr class="text-light">
+            </div>
+            <div class="footer">
+                <p class="text-light">&#169;2024 Find Now. All rights are reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./new.js"></script>
+</body>
+
+</html>
