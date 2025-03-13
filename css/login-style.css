@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    padding: 0px ;
+    margin: 0px;
+}
+.navbar-brand,li>a{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.collapse-index{
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+    border-bottom: 2px solid rgb(90, 90, 90);
+    padding:0px 10px;
+    width:fit-content;
+}
+li:hover{
+    border-bottom:2px solid  #17a2b8;
+    transition:0.5s;
+}
+li:hover a{
+    color: #1ff;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav{
+    display: flex;
+    justify-content:space-evenly;
+}
+li>a{
+    color:#fff;
+}
+.navbar{
+    background-color: rgb(90, 90, 90);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.login{
+    border:2px solid rgb(23, 162, 184);
+    border-radius:7px;
+    background-color: rgb(23, 162, 184);
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn-box-1{
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+}
+.btn-box-2{
+    width: 100%;
+    border-radius: 0px 50px 50px 0px;
+}
+.box-container{
+    border-radius:50px;
+    background-color:rgba(255, 228, 196,0.7);
+}
+.login-page{
+    border-radius:50px;
+    background-color:rgba(60, 60, 60,0.2);
+}
+.register-page{
+    border-radius:50px;
+    background-color:rgba(60, 60, 60,0.4);
+}
+.forgot-password{
+    color: blue;
+}
+.form-container{
+    width:60%;
+}
+.login-now{
+    color: #fff;
+    animation-name: login;
+    animation-duration: 3s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+
+}
+@keyframes login {
+    0%{
+        transform: scale(0.5);
+       
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+}
+.register-now{
+    color: #000;
+    animation-name:register;
+    animation-duration: 3s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes register {
+    0%{
+        transform: scale(0.5);
+       
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+}
+.input{
+    width:100%;
+    border: 2px solid rgb(23, 162, 184);
+    outline: 2px solid rgb(23, 162, 184);
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #fff;
+}
+.password{
+    border:2px solid #fff;
+    outline: 2px solid #fff;
+
+}
+
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content:space-evenly; 
+    gap: 10px; 
+}
+.footer-content{
+    overflow: hidden;
+}
+.brand-2{
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+}
+.fa-brands {
+    font-size: 20px;
+}
