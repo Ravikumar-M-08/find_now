@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./image/logo/find-now(1).png">
+    <title>Find Now</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <div class="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-light" href="">
+                    <img src="./image/logo/find-now(1).png" alt="" width="30px">Find Now
+                </a>
+            </div>
+            <div class="">
+                <li class="login"><a class="" href="">Log in</a></li>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav w-75">
+                    <li><a class="" href="../index.html">Home</a></li>
+                    <li><a class="" href="../index.html">Jobs</a></li>
+                    <li><a class="" href="../company-job.html">Companies</a></li>
+                    <li><a class="d-lg-none d-md-none" href="../post-job.html">Post jobs</a></li>
+                </div>
+                <div class="navbar-nav navbar-nav-2">
+                    <li><a class="" href="../login.html">Log in</a></li>
+                    <li><a class="" href="../post-job.html">Post jobs</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-lg-block col-lg-4 d-md-block col-md-4">
+                <div class="filter m-4">
+                    <div class="p-2">
+                        <div class=" d-flex justify-content-between" id="date-posted">
+                            <b>Date Posted</b>
+                            <span class="fa-solid fa-angle-up " id="filter-date"></span>
+                        </div>
+                        <div class="" id="date-posted-1">
+                            <hr>
+                            <input type="checkbox" name="" id="last-24-hours"> <label for="last-24-hours">Last 24
+                                Hours</label><br>
+                            <input type="checkbox" name="" id="last-3-days"> <label for="last-3-days">Last 3
+                                Days</label><br>
+                            <input type="checkbox" name="" id="last-7-days"> <label for="last-7-days">Last 7
+                                Days</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter m-4">
+                    <div class="p-2">
+                        <div class=" d-flex justify-content-between " id="location">
+                            <b>Location</b>
+                            <span class="fa-solid fa-angle-up " id="filter-location"></span>
+                        </div>
+                        <div class="" id="location-1">
+                            <hr>
+                            <input type="checkbox" name="" id="channai"> <label for="channai">TamilNadu</label><br>
+                            <input type="checkbox" name="" id="mumbai"> <label for="mumbai">Mumbai</label><br>
+                            <input type="checkbox" name="" id="delhi"> <label for="delhi">Delhi</label><br>
+                            <input type="checkbox" name="" id="kolkata"> <label for="kolkata">Kolkata</label><br>
+                            <input type="checkbox" name="" id="hyderabad"> <label for="hyderabad">Hyderabad</label><br>
+                            <input type="checkbox" name="" id="karnataka"> <label for="karnataka">Karnataka</label><br>
+                            <input type="checkbox" name="" id="gujarat"> <label for="gujarat">Gujarat</label><br>
+                            <div class="d-flex justify-content-center" onclick="more(view_1)">
+                                <span class="filter-more"><button class="filter-more"><b>View More</b></button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter filter-location m-4" id="view_1">
+                    <div class="p-2">
+                        <div class=" d-flex justify-content-between " id="location">
+                            <b>Location</b>
+                            <span class="fa-solid fa-close " id="filter-location"onclick="more_close(view_1)"></span>
+                        </div>
+                        <div class="" id="location-1">
+                            <hr>
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <input type="checkbox" name="" id="channai"> <label for="channai">Chennai</label><br>
+                                    <input type="checkbox" name="" id="mumbai"> <label for="mumbai">Mumbai</label><br>
+                                    <input type="checkbox" name="" id="delhi"> <label for="delhi">Delhi</label><br>
+                                    <input type="checkbox" name="" id="kolkata"> <label for="kolkata">Kolkata</label><br>
+                                    <input type="checkbox" name="" id="hyderabad"> <label for="hyderabad">Hyderabad</label><br>
+                                    <input type="checkbox" name="" id="karnataka"> <label for="karnataka">Bengaluru</label><br>
+                                    <input type="checkbox" name="" id="gujarat"> <label for="gujarat">Gujarat</label><br>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="channai"> <label for="channai">Pune</label><br>
+                                    <input type="checkbox" name="" id="mumbai"> <label for="mumbai">Gurugram</label><br>
+                                    <input type="checkbox" name="" id="delhi"> <label for="delhi">Noida</label><br>
+                                    <input type="checkbox" name="" id="kolkata"> <label for="kolkata">Coimbatore</label><br>
+                                    <input type="checkbox" name="" id="hyderabad"> <label for="hyderabad">Ahmedabad</label><br>
+                                    <input type="checkbox" name="" id="karnataka"> <label for="karnataka">Jaipur</label><br>
+                                    <input type="checkbox" name="" id="gujarat"> <label for="gujarat">Thiruvananthapuram</label><br>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="channai"> <label for="channai">Indore</label><br>
+                                    <input type="checkbox" name="" id="mumbai"> <label for="mumbai">Nagpur</label><br>
+                                    <input type="checkbox" name="" id="delhi"> <label for="delhi">Madurai</label><br>
+                                    <!-- <input type="checkbox" name="" id="kolkata"> <label for="kolkata"></label><br> -->
+                                    <!-- <input type="checkbox" name="" id="hyderabad"> <label for="hyderabad"></label><br>
+                                    <input type="checkbox" name="" id="karnataka"> <label for="karnataka"></label><br>
+                                    <input type="checkbox" name="" id="gujarat"> <label for="gujarat"></label><br> -->
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <input type="button" value="Apply" class="apply">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter m-4">
+                    <div class="p-2">
+                        <div class="d-flex justify-content-between" id="work-mode">
+                            <b>Salary</b>
+                            <span class="fa-solid fa-angle-up filter-show" id="filter-workmode"></span>
+                        </div>
+                        <div class="" id="work-mode-1">
+                            <hr>
+                            <input type="checkbox" name="" id="0-5"> <label for="0-5">0-5 lakhs</label><br>
+                            <input type="checkbox" name="" id="5-10"> <label for="5-10">5-10 lakhs</label><br>
+                            <input type="checkbox" name="" id="10-15"> <label for="10-15">10-15 lakhs</label><br>
+                            <input type="checkbox" name="" id="15-20"> <label for="15-20">15-20 lakhs</label><br>
+                            
+                            <div class="d-flex justify-content-center" onclick="more(view_2)">
+                                <span class="filter-more"><button class="filter-more"><b>View More</b></button></span>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+                <div class="filter filter-sal p-3" id="view_2">
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <b>Salary</b>
+                            <span class="fa-solid fa-close" id="close-filter" onclick="more_close(view_2)"></span>
+                        </div>
+                        <div>
+                            <hr>
+                            <input type="checkbox" name="" id="0-5-l"> <label for="0-5-l">0-5 lakhs</label><br>
+                            <input type="checkbox" name="" id="5-10-l"> <label for="5-10-l">5-10 lakhs</label><br>
+                            <input type="checkbox" name="" id="10-15-l"> <label for="10-15-l">10-15 lakhs</label><br>
+                            <input type="checkbox" name="" id="15-20-l"> <label for="15-20-l">15-20 lakhs</label><br>
+                            <input type="checkbox" name="" id="20-25-l"> <label for="20-25-l">20-25 lakhs</label><br>
+                            <input type="checkbox" name="" id="25-50-l"> <label for="25-50-l">25-50 lakhs</label><br>
+                            <input type="checkbox" name="" id="50-75-l"> <label for="50-75-l">50-75 lakhs</label><br>
+                            <input type="checkbox" name="" id="75-100-l"> <label for="75-100-l">75-100 lakhs</label><br>
+                            <div class="d-flex justify-content-end">
+                                <input type="button" value="Apply" class="apply">   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter m-4">
+                    <div class="p-2">
+                        <div class="d-flex justify-content-between" id="work-type">
+                            <b>Work Type</b>
+                            <span class="fa-solid fa-angle-up filter-show" id="filter-worktype"></span>
+                        </div>
+                        <div class="" id="work-type-1">
+                            <hr>
+                            <input type="checkbox" name="" id="f-time"> <label for="f-time">Full time</label><br>
+                            <input type="checkbox" name="" id="p-time"> <label for="p-time">Part time</label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter m-4">
+                    <div class="p-2">
+                        <div class="d-flex justify-content-between" id="work-mode">
+                            <b>Work Mode</b>
+                            <span class="fa-solid fa-angle-up filter-show" id="filter-workmode"></span>
+                        </div>
+                        <div class="" id="work-mode-1">
+                            <hr>
+                            <input type="checkbox" name="" id="wfh"> <label for="wfh">Work from home</label><br>
+                            <input type="checkbox" name="" id="wfo"> <label for="wfo">Work from office</label><br>
+                            <input type="checkbox" name="" id="wff"> <label for="wff">Work from field</label><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none d-md-none">
+                <div class="p-3 d-flex align-items-center ">
+                    <div class="p-1">
+                        <span class="fa-solid fa-filter"></span>
+                    </div>
+                    <div class="d-flex filter-mobile">
+                        <span><button class="filter-btn-mobile" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Date Posted <span
+                                    class="fa-solid fa-angle-down"></span></button> </span>
+                        <span><button class="filter-btn-mobile" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Location <span
+                                    class="fa-solid fa-angle-down"></span></button> </span>
+                        <span><button class="filter-btn-mobile" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Salary <span
+                                    class="fa-solid fa-angle-down"></span></button> </span>
+                        <span><button class="filter-btn-mobile" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Work Type <span
+                                    class="fa-solid fa-angle-down"></span></button> </span>
+                        <span><button class="filter-btn-mobile" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Work Mode <span
+                                    class="fa-solid fa-angle-down"></span></button> </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-bottom rounded h-100" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">All Filters</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                </div>
+                
+                <div class="">
+                    <div class="row">
+                        <hr>
+                        <div class="col-4 p-1">
+                            <div class="d-flex-col">
+                                <button class="filter-sm text-start  w-100" id="data_posted_sm"> Date Posted</button>
+                                <button class="filter-sm text-start  w-100" id="location_sm"> Location</button>
+                                <button class="filter-sm text-start  w-100" id="salary_sm"> Salary</button>
+                                <button class="filter-sm text-start  w-100" id="work_type_sm"> Work Type</button>
+                                <button class="filter-sm text-start  w-100" id="work_mode_sm"> Work Mode</button>
+                            </div>
+                        </div>
+
+                        <div class="col-8 mb-2 filter-display-sm" >
+                            <div class=" " id="date_posted_filter">
+
+                                <input type="checkbox" name="" id="last-24-hours"> <label for="last-24-hours">Last 24
+                                    Hours</label><br>
+                                <input type="checkbox" name="" id="last-3-days"> <label for="last-3-days">Last 3
+                                    Days</label><br>
+                                <input type="checkbox" name="" id="last-7-days"> <label for="last-7-days">Last 7
+                                    Days</label>
+                            </div>
+                            <div class="" id="location_filter">
+                                <input type="checkbox" name="" id="channai"> <label for="channai">Chennai</label><br>
+                                <input type="checkbox" name="" id="mumbai"> <label for="mumbai">Mumbai</label><br>
+                                <input type="checkbox" name="" id="delhi"> <label for="delhi">Delhi</label><br>
+                                <input type="checkbox" name="" id="kolkata"> <label for="kolkata">Kolkata</label><br>
+                                <input type="checkbox" name="" id="hyderabad"> <label
+                                    for="hyderabad">Hyderabad</label><br>
+                                <input type="checkbox" name="" id="karnataka"> <label
+                                    for="karnataka">Bengaluru</label><br>
+                                <input type="checkbox" name="" id="gujarat"> <label for="gujarat">Gujarat</label><br>
+                                <input type="checkbox" name="" id="channai"> <label for="channai">Pune</label><br>
+                                <input type="checkbox" name="" id="mumbai"> <label for="mumbai">Gurugram</label><br>
+                                <input type="checkbox" name="" id="delhi"> <label for="delhi">Noida</label><br>
+                                <input type="checkbox" name="" id="kolkata"> <label for="kolkata">Coimbatore</label><br>
+                                <input type="checkbox" name="" id="hyderabad"> <label
+                                    for="hyderabad">Ahmedabad</label><br>
+                                <input type="checkbox" name="" id="karnataka"> <label for="karnataka">Jaipur</label><br>
+                                <input type="checkbox" name="" id="gujarat"> <label
+                                    for="gujarat">Thiruvananthapuram</label><br>
+                            </div>
+                            <div class="" id="salary_filter">
+                                <input type="checkbox" name="" id="0-5-l"> <label for="0-5-l">0-5 lakhs</label><br>
+                                <input type="checkbox" name="" id="5-10-l"> <label for="5-10-l">5-10 lakhs</label><br>
+                                <input type="checkbox" name="" id="10-15-l"> <label for="10-15-l">10-15 lakhs</label><br>
+                                <input type="checkbox" name="" id="15-20-l"> <label for="15-20-l">15-20 lakhs</label><br>
+                                <input type="checkbox" name="" id="20-25-l"> <label for="20-25-l">20-25 lakhs</label><br>
+                                <input type="checkbox" name="" id="25-50-l"> <label for="25-50-l">25-50 lakhs</label><br>
+                                <input type="checkbox" name="" id="50-75-l"> <label for="50-75-l">50-75 lakhs</label><br>
+                                <input type="checkbox" name="" id="75-100-l"> <label for="75-100-l">75-100 lakhs</label><br>
+                            </div>
+                            <div class="" id="work_type_filter">
+                                <input type="checkbox" name="" id="f-time"> <label for="f-time">Full time</label><br>
+                                <input type="checkbox" name="" id="p-time"> <label for="p-time">Part time</label><br>
+                            </div>
+                            <div class="" id="work_mode_filter">
+                                <input type="checkbox" name="" id="wfh"> <label for="wfh">Work from home</label><br>
+                                <input type="checkbox" name="" id="wfo"> <label for="wfo">Work from office</label><br>
+                                <input type="checkbox" name="" id="wff"> <label for="wff">Work from field</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100">
+                        <div class="d-flex justify-content-between ">
+                            <div>
+                                <button class="btn btn-info">Clear</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-info">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+                <div class="jobs" id="third-wave-jobs">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="container-fluid container-fluid-6 bg-dark">
+        <div class="row pt-3">
+            <div class="footer">
+                <div class="">
+                    <a href="">
+                        <div class="d-lg-flex navbar-brand">
+                            <img src="./image/logo/find-now(1).png" alt="" width="50px">
+                            <p class="text-light h5 mt-lg-2">Find Now</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="brand">
+                    <div class="">
+                        <p class="text-light">Follow us on social media</p>
+                    </div>
+                    <div class="">
+                        <div class="brand-2">
+                            <div>
+                                <a href=""><span class="fa-brands fa-facebook text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-instagram text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-twitter text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-youtube text-light"></span></a>
+                            </div>
+                            <div>
+                                <a href=""><span class="fa-brands fa-linkedin text-light"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <hr class="text-light">
+            </div>
+            <div class="footer">
+                <p class="text-light">&#169;2024 Find Now. All rights are reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- script -->
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./new.js"></script>
+    
+</body>
+
+</html>
